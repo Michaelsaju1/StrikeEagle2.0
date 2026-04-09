@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(uv pip:*)",
+      "Bash(.venv/Scripts/python:*)",
+      "Bash(cargo --version)",
+      "Bash(rustc --version)",
+      "Bash(rustup --version)",
+      "Bash(where rustup:*)",
+      "Bash(where cargo:*)",
+      "Bash(PYTHONPATH=. .venv/Scripts/python scripts/bench_sim.py)",
+      "Bash(export PATH=\"$HOME/.cargo/bin:$PATH\")",
+      "Bash(cargo build:*)",
+      "Bash(cargo run:*)",
+      "Bash(python3 -m json.tool)",
+      "Read(//tmp/**)",
+      "Bash(PYTHONPATH=. .venv/Scripts/python scripts/parity_test.py)",
+      "Bash(tasklist)",
+      "Bash(taskkill //PID 47136 //F)",
+      "Bash(taskkill //PID 67572 //F)",
+      "Bash(taskkill //PID 29184 //F)",
+      "Bash(taskkill //PID 59348 //F)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote:*)"
+    ]
+  }
+}
