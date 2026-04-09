@@ -1,0 +1,15 @@
+/target
+.next/
+viz/node_modules/
+viz/.next/
+viz/.next_stale_*/
+viz/out/
+
+# Local training artifacts
+training/
+
+# ONNX models (except tracked user models)
+*.onnx
+*.onnx.data
+!models/starter.onnx
+!crates/validator/tests/fixtures/*.onnx
